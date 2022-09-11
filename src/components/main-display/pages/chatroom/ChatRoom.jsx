@@ -20,46 +20,32 @@ export default function ChatRoom() {
   const handle = useRef(null)
   const chatbox = useRef(null)
   const chatlist = useRef(null)
+  const chatroom = useRef(null)
  
   
+
 const [isOpen,setIsOpen] = useState(false)
 
-let chatListMargin = isOpen == true? '0' : isOpen == false? '-23%' : null
-let chatBoxWidth = isOpen == true? '73%' : isOpen == false? '95%%' : null
- 
-    useEffect(() => {
-
-      let  Handle = handle.current
-      let chatBox = chatbox.current
-      let chatList = chatlist.current
+const toggleOpen =()=>{
+    setIsOpen(!isOpen)
+   }
    
-      
+const width = isOpen? '73%':'95%'
+const margin = isOpen? '0' : '-23%'
+
+   
+    useEffect(() => {     
+let chatRoom = chatroom.current
+
+gsap.to(chatRoom,{duration:1,opacity:1})
   
-  const open = ()=>{
-     setIsOpen = true
-
-    gsap.to(chatList,{duration:0.4,marginLeft:chatListMargin})
-         
-    gsap.to(chatBox,{duration:0.4,width:chatBoxWidth})
-
-    console.log(isOpen)
-  }
-  
-      Handle.addEventListener('click',open)
-
-
-      return()=>{
-        Handle.removeEventListener('click',open)
-      }
-
-
-   drawOut()
+   
 
 
     },[] );
   return (
-    <Chatroom>
-          <div className='mentee-chat-list' ref={chatlist}>
+    <Chatroom ref={chatroom}>
+          <div className='mentee-chat-list' ref={chatlist} style={{marginLeft:margin}}>
         <div className='mentees'>
 
         <div className='mentee'>
@@ -354,11 +340,11 @@ let chatBoxWidth = isOpen == true? '73%' : isOpen == false? '95%%' : null
 
         </div>
 
-        <div className='drawer-handle' ref={handle}>
+        <div className='drawer-handle' ref={handle} onClick={toggleOpen}>
           <img src={Dots} alt="" />
         </div>
           </div>
-      <div className='chat-box' ref={chatbox}>
+      <div className='chat-box' ref={chatbox} style={{width:width}}>
        
       </div>
       

@@ -8,6 +8,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 overflow:hidden;
+opacity:0;
 
 
 .mentee-chat-list{
@@ -15,7 +16,8 @@ overflow:hidden;
     border-bottom-right-radius: 4px ;
     width:25%;
     height:90%;
-    margin-left:-23% ;
+    transition: 0.3s ease-in all;
+    /* margin-left:-23% ; */
     border-right: 2px solid black;
     /* background-color:#009cb5; */
     display:flex;
@@ -120,8 +122,8 @@ align-items:flex-end;
 
 }
 .chat-box{
-    /* width:73%; */
-    width:95%;
+   
+    transition: 0.3s ease-in all;
     height:600px;
     background: radial-gradient(ellipse at top,#00899e25  , transparent),
             radial-gradient(ellipse at bottom,#00899e25  , transparent);
