@@ -6,7 +6,7 @@ width:100%;
 display:flex;
 flex-direction:column ;
 align-items:center;
-color:#02020C;
+color:#023B44;
 
 .mentee-list{
     width:80%;
@@ -31,6 +31,10 @@ color:#02020C;
         width:100%;
         height:10px;
         margin-bottom:30px ;
+        td{
+           border-bottom:2px solid #00A3BD0A; 
+        }
+        
         
         .id{
             span{
