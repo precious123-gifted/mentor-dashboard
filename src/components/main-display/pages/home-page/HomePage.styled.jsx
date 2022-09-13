@@ -7,6 +7,8 @@ display:flex;
 flex-direction:column ;
 align-items:center;
 color:#023B44;
+opacity:0;
+margin-top:-600px;
 
 .mentee-list{
     width:80%;

@@ -7,7 +7,7 @@ export class CalenderPage extends Component {
     return (
 
         <Calenderpage>
-           <div>CalenderPage</div>  
+           <div></div>  
         </Calenderpage>
      
     )

@@ -37,7 +37,10 @@ const margin = isOpen? '0' : '-23%'
     useEffect(() => {     
 let chatRoom = chatroom.current
 
-gsap.to(chatRoom,{duration:1,opacity:1})
+gsap.to(chatRoom,{duration:1.2,opacity:1})
+gsap.to(chatRoom,{duration:1,marginTop:0})
+
+
   
    
 
@@ -346,6 +349,29 @@ gsap.to(chatRoom,{duration:1,opacity:1})
           </div>
       <div className='chat-box' ref={chatbox} style={{width:width}}>
        
+<div className='content'>
+<div className='chat-content'>
+<div className='sender1'><span className='message'>good afternoon how are you doing today sir </span></div>
+<div className='sender2'><span className='message'>i am doing great how about you johni am doing great how about you john i am doing great how about you johni am doing great how about you john</span></div>
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender1'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender1'><span className='message'>i am doing great how about you john i am doing great how about you john </span></div>
+
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+
+</div>
+
+<div className='message-sender'>
+
+  
+</div>
+</div>
+
+
+
+
+
       </div>
       
       </Chatroom>

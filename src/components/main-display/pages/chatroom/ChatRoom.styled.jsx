@@ -8,6 +8,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 overflow:hidden;
+margin-top:-600px;
 opacity:0;
 
 
@@ -128,6 +129,50 @@ align-items:flex-end;
     background: radial-gradient(ellipse at top,#00899e25  , transparent),
             radial-gradient(ellipse at bottom,#00899e25  , transparent);
     border-radius:30px ;
+
+.content{
+    width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+.chat-content{
+
+  padding:20px ;
+width:80%;
+height:90%;
+display :flex;
+flex-direction:column ;
+align-items:flex-end;
+color:white; 
+ .sender1{
+    display:flex;
+    margin-bottom:10px ;
+    max-width:35%;
+    padding:15px;
+    background-color: #384648;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.67), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+border-radius: 10px;
+
+
+}
+
+.sender2{
+    align-self:flex-start ;
+    display:flex;
+    margin-bottom:10px ;
+    max-width:35%;
+    padding:15px;
+    background-color: #005B69;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.67), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+border-radius: 10px;
+
+
+}
+}
+
+}
+
 }
 
 
