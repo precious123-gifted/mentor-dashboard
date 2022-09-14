@@ -1,6 +1,8 @@
 import React, { Component, useRef } from 'react'
 import { Chatroom } from './ChatRoom.styled'
 import Dots from '../../../../assets/dots.png'
+import Attachment from '../../../../assets/attch.png'
+import sendBTN from '../../../../assets/send.png'
 import { gsap } from "gsap";
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -24,7 +26,7 @@ export default function ChatRoom() {
  
   
 
-const [isOpen,setIsOpen] = useState(false)
+const [isOpen,setIsOpen] = useState(true)
 
 const toggleOpen =()=>{
     setIsOpen(!isOpen)
@@ -359,12 +361,15 @@ gsap.to(chatRoom,{duration:1,marginTop:0})
 <div className='sender1'><span className='message'>i am doing great how about you john i am doing great how about you john </span></div>
 
 <div className='sender2'><span className='message'>i am doing great how about you john</span></div>
-
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
+<div className='sender2'><span className='message'>i am doing great how about you john</span></div>
 </div>
 
 <div className='message-sender'>
+<div className='attachment'><img src={Attachment} alt="" /></div ><div className="input-area"><input type="text" name=""/></div><div className='send-BTN'><img src={sendBTN} alt="" /></div>
 
-  
 </div>
 </div>
 

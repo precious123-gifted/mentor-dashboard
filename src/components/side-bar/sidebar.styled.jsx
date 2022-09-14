@@ -7,5 +7,18 @@ flex-direction:column;
 align-items:center;
 width :20%;
 height:100vh;
+.logo{
+height:20%;
+display:flex;
+justify-content:center;
+align-self: auto;
+align-items:flex-end;
+
+
+img{
+    width:90px;
+}    
+}
+
 
 `

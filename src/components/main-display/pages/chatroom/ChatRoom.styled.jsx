@@ -134,24 +134,26 @@ align-items:flex-end;
     width:100%;
 height:100%;
 display:flex;
-justify-content:center;
+flex-direction:column;
+justify-content:space-between;
 align-items:center;
 .chat-content{
 
   padding:20px ;
 width:80%;
-height:90%;
+height:80%;
 display :flex;
 flex-direction:column ;
 align-items:flex-end;
 color:white; 
+overflow:scroll;
  .sender1{
     display:flex;
     margin-bottom:10px ;
     max-width:35%;
     padding:15px;
     background-color: #384648;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.67), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+
 border-radius: 10px;
 
 
@@ -164,11 +166,57 @@ border-radius: 10px;
     max-width:35%;
     padding:15px;
     background-color: #005B69;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.67), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+
 border-radius: 10px;
 
 
 }
+}
+
+.message-sender{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+width:80%;
+height:10%;
+position: relative;
+
+    .attachment{
+        position:absolute;
+        height:50%;
+        width:10%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+       left:80%;
+
+    }
+    .input-area{
+        width:80%;
+        height: 50%;
+input{
+    color:#005B69 ;
+    padding-left:10px ;
+    padding-right:10px ;
+    outline:none;
+   border:0.1px solid #005B69;
+    width:100%;
+    height:100%;
+background: #FFFFFF;
+padding-right:20% ;
+border-radius: 14px;
+overflow-wrap: break-word;
+
+}
+    }
+    .send-BTN{
+       
+        height:50%;
+        width:10%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
 }
 
 }

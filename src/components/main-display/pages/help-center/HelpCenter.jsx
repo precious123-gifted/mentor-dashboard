@@ -6,7 +6,7 @@ export class HelpCenter extends Component {
   render() {
     return (
         <Helpcenter>
-      <div>HelpCenter</div>
+      <div>HelpCenter: phone number,frequently asked questions and contact us</div>
       </Helpcenter>
     )
   }

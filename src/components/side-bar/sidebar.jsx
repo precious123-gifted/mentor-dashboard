@@ -8,7 +8,8 @@ export default class SideBar extends Component {
   render() {
     return (
       <Sidebar>
-<img src={FYMKLogo} alt="" />
+
+<span className='logo'><img src={FYMKLogo} alt="" /></span>
 <MenuList/>
 </Sidebar>
     )
